@@ -22,11 +22,13 @@ func main() {
 	fmt.Print("Enter the salary:")
 	fmt.Scanln(&salary)
 
-	pay = (hours * salary) * (1 - 0.18)
-	governmentpay = (hours * salary) * 0.18
+	pay = (hours * salary) * (1 - rate)
+	governmentpay = (hours * salary) * rate
+	roundedpay := fmt.Sprintf("%.2f", pay)
+	roundedgovernmentpay := fmt.Sprintf("%.2f", governmentpay)
 
-	fmt.Println("Your pay is: ", pay)
-	fmt.Println("Your government pay is: ", governmentpay)
+	fmt.Println("Your pay is: ", roundedpay)
+	fmt.Println("Your government pay is: ", roundedgovernmentpay)
 
 	fmt.Println("\nDone.")
 }
