@@ -12,22 +12,25 @@ func main() {
 	const rate float64 = 0.18
 	var hours float64
 	var pay float64
-	var governmentpay float64
+	var governmentPay float64
 	var salary float64
 
 	// input
-	fmt.Println("Enter Hours:")
+	fmt.Print("Enter Hours: ")
 	fmt.Scanln(&hours)
-	fmt.Print("Enter the salary:")
+	fmt.Print("Enter the salary: ")
 	fmt.Scanln(&salary)
 
+	// process
 	pay = (hours * salary) * (1 - rate)
-	governmentpay = (hours * salary) * rate
+	governmentPay = (hours * salary) * rate
 	roundedpay := fmt.Sprintf("%.2f", pay)
-	roundedgovernmentpay := fmt.Sprintf("%.2f", governmentpay)
+	roundedGovernmentPay := fmt.Sprintf("%.2f", governmentPay)
 
-	fmt.Println("Your pay is: ", roundedpay)
-	fmt.Println("Your government pay is: ", roundedgovernmentpay)
+	// output
+	fmt.Println("")
+	fmt.Println("Your pay is: $", roundedpay)
+	fmt.Println("Your government pay is: $", roundedGovernmentPay)
 
 	fmt.Println("\nDone.")
 }
