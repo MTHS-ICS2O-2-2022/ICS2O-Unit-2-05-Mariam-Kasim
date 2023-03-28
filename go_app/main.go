@@ -2,7 +2,6 @@
 // Created on: March 2023
 //
 // This file contains the main function for the go_app application
-
 package main
 
 import (
