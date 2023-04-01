@@ -2,6 +2,7 @@
 // Created on: March 2023
 //
 // This file contains the main function for the go_app application
+
 package main
 
 import (
@@ -14,7 +15,7 @@ func main() {
 	var pay float64
 	var governmentPay float64
 	var salary float64
-
+	
 	// input
 	fmt.Print("Enter Hours: ")
 	fmt.Scanln(&hours)
