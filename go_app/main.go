@@ -1,37 +1,23 @@
-// Created by: Mariam Kasim
-// Created on: March 2023
+// Created by: Mr Coxall
+
+// Created on: Sep 2020
+
 //
-// This file contains the main function for the go_app application
+
+// This program displays, "Hello, World!"
 
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	const rate float64 = 0.18
-	var hours float64
-	var pay float64
-	var governmentPay float64
-	var salary float64
 
-	// input
-	fmt.Print("Enter Hours: ")
-	fmt.Scanln(&hours)
-	fmt.Print("Enter the salary: ")
-	fmt.Scanln(&salary)
+	// This function displays, "Hello, World!"
 
-	// process
-	pay = (hours * salary) * (1 - rate)
-	governmentPay = (hours * salary) * rate
-	roundedpay := fmt.Sprintf("%.2f", pay)
-	roundedGovernmentPay := fmt.Sprintf("%.2f", governmentPay)
+	// the Go standard is to indent using "tabs" NOT spaces!
 
-	// output
-	fmt.Println("")
-	fmt.Println("Your pay is: $", roundedpay)
-	fmt.Println("Your government pay is: $", roundedGovernmentPay)
+	fmt.Println("Hello, World!")
 
 	fmt.Println("\nDone.")
+
 }
