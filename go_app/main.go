@@ -15,7 +15,7 @@ func main() {
 	var pay float64
 	var governmentPay float64
 	var salary float64
-	
+
 	// input
 	fmt.Print("Enter Hours: ")
 	fmt.Scanln(&hours)
